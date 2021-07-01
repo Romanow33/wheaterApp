@@ -1,29 +1,2 @@
-.search{
-    font: 1em Hind, sans-serif;
-	line-height: 1.5em;
-    color: #171717;
-    
-    margin-left: -20em;
-    
-}
 
-.searc, .btn{
-    transition: all 0.25s ease-out;
-    width: 3em;
-	height: 3em;
-    display: -moz-grid-line;
-    outline: transparent;
-    
-}
-.btn{
-    background-color: blue;
-    margin-left: 2em;
-    background: #171717;
-	border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
-	padding: 0.75em;
-	position: relative;
-	transform: translate(0.25em,0.25em) rotate(45deg) scale(0.25,0.125);
-	transform-origin: 0 50%;
-    
 
-}

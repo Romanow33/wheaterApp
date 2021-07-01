@@ -8,10 +8,10 @@ export default function Cards({cities, onClose}) {
     <div className='cards'>
       {cities.map(c => <Card
           key={c.id}
-          max= {Math.floor(c.max - 273.15)}
-          min={Math.floor(c.min - 273.15)}
-          name={c.name}
-          img={c.img}
+          max = {Math.floor(c.max - 273.15)}
+          min ={Math.floor(c.min - 273.15)}
+          name ={c.name}
+          img ={c.img}
           onClose={() => onClose(c.id)}
         /> )}
     </div>
