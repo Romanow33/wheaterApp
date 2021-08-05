@@ -5,13 +5,13 @@ export default function SearchBar({onSearch}) {
   const [city, setCity] = useState("");
   return (
     
-    <div class="search-box">
+    <div className="search-box">
     <form onSubmit={(e) => {
       e.preventDefault();
       onSearch(city);
     }}>
       <button type="submit" className ="btn-search">
-      <img src="" alt="" />
+      <div className="lupa"></div>
       </button>
       <input className='input-search'
         type="text"

@@ -6,10 +6,10 @@ import './Nav.css';
 
 function Nav({onSearch}) {
   return (
-    <nav className="navbar navbar-dark bg-dark">
+    <nav className="navbar">
         <span className="navbar-brand">
           <img id="logoHenry" src={favicon} width="30" height="30" className="d-inline-block align-top" alt="" />
-          ClimApp
+          <span className="title">ClimApp</span>  
         </span>
         <SearchBar
           onSearch={onSearch}

@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+body{
+  background-image: url(../../src/img/what-the-hex-dark.png);
+}
 .row {
   display: flex;
   justify-content: center;
