@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap");
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 230px);
+  gap:10px;
+  padding: 10px;
+  justify-content: center;
+}
+
+@media (max-width: 560px) {
+  .moviesGrid {
+    grid-template-columns: 100%;
+  }
+}
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -5,4 +19,13 @@
   align-items: center;
   width: 1000px;
   height: 1000px;
+}
+
+.subtitle {
+  font-family: "Roboto Condensed", sans-serif;
+  margin-top: 40px;
+  font-size: 50px;
+  width: 300px;
+  grid-column: 1 / 2;
+  grid-row: 1;
 }
