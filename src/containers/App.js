@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+
 import "./App.css";
 import Nav from "../components/Nav.jsx";
 import Cards from "../components/Cards.jsx";
 
-const apiKey = "4ae2636d8dfbdc3044bede63951a019b";
-
+const API_URL = process.env.REACT_APP_API_URL;
+const API_KEY = process.env.REACT_APP_API_KEY;
 function App() {
   const [cities, setCities] = useState([]);
   function onClose(id) {
@@ -12,9 +13,7 @@ function App() {
   }
   function onSearch(ciudad) {
     //Llamado a la API del clima
-    fetch(
-      `//api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`
-    )
+    fetch(API_URL + `${ciudad}&appid=` + API_KEY)
       .then((r) => r.json())
       .then((recurso) => {
         if (recurso.main !== undefined) {
