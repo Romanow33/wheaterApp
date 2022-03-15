@@ -3,11 +3,9 @@ import "./App.css";
 import Nav from "../components/Nav.jsx";
 import Cards from "../components/Cards.jsx";
 
-const APIKEY = process.env.REACT_APP_API_KEY
-const APIURL = process.env.REACT_APP_API_URL
-
-
-
+const APIKEY = process.env.REACT_APP_API_KEY;
+const APIURL = process.env.REACT_APP_API_URL;
+console.log()
 function App() {
   const [cities, setCities] = useState([]);
 
@@ -15,10 +13,7 @@ function App() {
     setCities((oldCities) => oldCities.filter((c) => c.id !== id));
   }
   function onSearch(ciudad) {
-    //Llamado a la API del clima
-    fetch(
-      `${APIURL}${ciudad}&appid=${APIKEY}`
-    )
+    fetch(APIURL + `${ciudad}&appid=` + APIKEY)
       .then((r) => r.json())
       .then((recurso) => {
         if (recurso.main !== undefined) {
