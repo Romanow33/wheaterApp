@@ -1,5 +1,4 @@
 import React from "react";
-import favicon from "../img/favicon.ico";
 import SearchBar from "./SearchBar.jsx";
 import "./Nav.css";
 
