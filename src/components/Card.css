@@ -16,25 +16,25 @@
   background-color: white;
   box-shadow: -2px 14px 33px 0px rgba(0, 0, 0, 0.75);
   padding: 10px;
-  margin: 10px;
-  width: 500px;
   max-width: 350px;
   justify-content: flex-start;
   align-items: center;
   color: black;
   font-size: 20px;
 }
+
+@media (max-width: 560px) {
+  h1 {
+    font-size: 30px;
+  }
+}
 .card:hover {
   background-color: black;
   box-shadow: -2px 14px 33px 0px rgba(0, 0, 0, 0.75);
   color: white;
-  padding: 10px;
-  margin: 10px;
-  width: 500px;
   max-width: 350px;
   justify-content: flex-start;
   align-items: center;
-  transform: scale(1.1);
 }
 .button {
   position: absolute;
@@ -42,9 +42,11 @@
   width: 32px;
   height: 32px;
   opacity: 0.3;
+  text-align: center;
 }
 .button:hover {
   opacity: 1;
+  background-color: rgba(255, 143, 109, 0.815);
 }
 
 .button:before {

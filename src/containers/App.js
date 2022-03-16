@@ -38,10 +38,10 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <>
       <Nav onSearch={onSearch} />
       <Cards cities={cities} onClose={onClose} />
-    </div>
+    </>
   );
 }
 

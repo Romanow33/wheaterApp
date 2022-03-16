@@ -9,7 +9,6 @@
   border-color: #1f2f47;
   border-top-left-radius: 17px;
   border-top-right-radius: 17px;
-
   box-shadow: inset 0px 0px 15px 3px #23395e;
   text-shadow: inset 0px 1px 0px #263666;
   background: linear-gradient(#2e466e, #415989);
@@ -24,9 +23,11 @@
   border: 0;
   height: 50px;
   width: 100%;
+  text-transform: uppercase;
+  font-family: "Fredoka", sans-serif;
 }
 .input-search:focus {
   background-color: rgba(128, 128, 128, 0.082);
-  color: gray;
-  font-weight: bold;
+  color: grey;
+  text-transform: uppercase;
 }

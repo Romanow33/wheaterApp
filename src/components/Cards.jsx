@@ -5,9 +5,9 @@ import Card from "./Card.jsx";
 
 export default function Cards({ cities, onClose }) {
   return (
-    <div className="container">
-      <div className="subtitle">¡Busca el clima de ciudades o paises!</div>
+    <div>
       <div className="cards">
+        <div className="subtitle">¡Busca el clima de ciudades o paises!</div>
         {cities.map((c) => (
           <Card
             key={c.id}
